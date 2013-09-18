@@ -1,0 +1,6 @@
+[submodule "sense"]
+	path = sense
+	url = https://github.com/bleskes/sense/
+[submodule "kibana"]
+	path = kibana
+	url = https://github.com/elasticsearch/kibana

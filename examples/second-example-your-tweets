@@ -1,0 +1,33 @@
+Prerequisites
+--------------
+* Running node of elasticsearch on our uiosearch cluster
+* Open elasticsearch-uio-demo/sense/index.html
+
+{ 
+	"query": { 
+		"match": { 
+			"text": { 
+				"query":"oslo" 
+		} 
+	} 
+}
+
+
+{ 
+	"query": { 
+		"match": { 
+			"hashtag.text": { 
+				"query":"comperiouio" 
+		} 
+	} 
+}
+
+{ 
+	"query": { 
+		"match": { 
+			"user.screen_name": { 
+				"query":"comperio_dev" 
+		} 
+	} 
+}
+
