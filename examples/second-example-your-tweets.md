@@ -1,10 +1,14 @@
 Prerequisites
 --------------
-* Running node of elasticsearch on our uiosearch cluster
+* Running node of elasticsearch *on our uiosearch cluster*
 * Open elasticsearch-uio-demo/sense/index.html
 
-Query for "oslo"
+Second example, your tweets!
+---------------
+In the following, we will use [Sense] to query our index uiocomperio.
 
+Query for all tweets that contian the word "oslo"
+```json
     { 
       "query": { 
         "match": { 
@@ -13,9 +17,9 @@ Query for "oslo"
         } 
       } 
     }
-
-Query for the hashtag "comperiouio"
-
+```
+Query for all tweets that contain the hashtag "comperiouio"
+```json
     { 
       "query": { 
         "match": { 
@@ -24,9 +28,9 @@ Query for the hashtag "comperiouio"
         } 
       } 
     }
-
-Query for user "comperio_dev"
-
+```
+Query for all tweets for the user "comperio_dev"
+```json
     { 
       "query": { 
         "match": { 
@@ -35,3 +39,6 @@ Query for user "comperio_dev"
         } 
       } 
     }
+```
+
+[Sense]: https://github.com/bleskes/sense/
