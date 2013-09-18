@@ -3,12 +3,18 @@ elasticsearch-uio-demo
 
 This demo is based on [hammertime](https://github.com/s1monw/hammertime).
 
-This repo inlcude two submodules ([Kibana] and [Sense]), configuration
-files and examples.
+This repo is basically a collection of different softwares and tools which help you get started with elasticsearch.
+We inlcude two submodules ([Kibana] and [Sense]), two configuration
+files ([elasticsearch.yml](elasticsearch.yml), [dashboard.json](dashboard.json)) and some [examples](examples/).
 
-helps you download and configure [elasticsearch] (version
-0.90.3) and [Kibana] three. In addition,  contains a very useful, JSON-aware 
-tool named [Sense] to communicate with elasticsearch from your browser. 
+[Kibana] is an open source (Apache Licensed), browser based  analytics
+ and search interface data sets stored in
+ elasticsearch. [source](https://github.com/elasticsearch/kibana)
+Said differently, Kibana helps you make sense of your data.
+
+[Sense] is a JSON-aware tool that allows you to communicate with
+elasticsearch from your browser and it provides many features such as
+autocomplete and syntax checking.
 
 Prerequisites
 --------------
@@ -48,7 +54,23 @@ Windows users: ``.\elasticsearch-0.90.3\bin\elasticsearch``
 In you fave browser, open:
    localhost:9200 
 
-Did you see: *"You Know, for Search"*? It works!
+Did you see something like:
+
+{
+  "ok" : true,
+  "status" : 200,
+  "name" : "Styx and Stone",
+  "version" : {
+    "number" : "0.90.3",
+    "build_hash" : "5c38d6076448b899d758f29443329571e2522410",
+    "build_timestamp" : "2013-08-06T13:18:31Z",
+    "build_snapshot" : false,
+    "lucene_version" : "4.4"
+  },
+  "tagline" : "You Know, for Search"
+}
+
+It works!
 
 Now you can try the queries in [examples](examples/).
 
