@@ -12,9 +12,9 @@ Phrase
     {
       "query": {
         "query_string": {
-           "default_field": "text",
-           "query": "New York",           
-           "default_operator": "AND"
+          "default_field": "text",
+          "query": "New York",
+          "default_operator": "AND"
         }
       }
     }
@@ -25,9 +25,11 @@ Boolean
       "query": {
         "bool": {
           "must": [
-           {"match": {
-              "hashtag.text": "oslo"
-           }}
+            {
+              "match": {
+                "hashtag.text": "oslo"
+              }
+            }
           ],
           "must_not": [
             {
@@ -38,7 +40,7 @@ Boolean
           ]
         }
       }
-    }
+}
 
 
 Filters
@@ -47,37 +49,41 @@ Filters
 Field
 
     {
-        "query": {
-            "constant_score": {
-               "filter": {
-                   "exists": {
-                      "field": "place.country"
-                   }                            
-               }           
+      "query": {
+        "constant_score": {
+          "filter": {
+            "exists": {
+              "field": "place.country"
             }
+          }
         }
+      }
     }
 
 Boolean
 
-  {
+    {
       "query": {
-          "constant_score": {
-             "filter": {
-                 "and": {
-                    "filters": [
-                       {"exists": {
-                          "field": "place.country"
-                       }},
-                       {"term": {
-                          "hashtag.text": "oslo"
-                       }}
-                    ]
-                 }
-             }
+        "constant_score": {
+          "filter": {
+            "and": {
+              "filters": [
+                {
+                  "exists": {
+                    "field": "place.country"
+                  }
+                },
+                {
+                  "term": {
+                    "hashtag.text": "oslo"
+                  }
+                }
+              ]
+            }
           }
+        }
       }
-  }
+    }
 
 
 Filters only do exact matching 
