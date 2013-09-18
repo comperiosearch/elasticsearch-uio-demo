@@ -21,6 +21,8 @@ Installation
 
 1. ``git clone --recursive git@github.com:comperiosearch/elasticsearch-uio-demo.git``
 2. Change directory to ``elasticsearch-uio-demo``
+Now you can either run the script ``prepare.sh`` (Windows: ``prepare.bat``) or manually do the following:
+
 3. Download [elasticsearch-0.90.3](https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-0.90.3.zip)
 4. Extract elasticsearch-0.90.3.zip in the same directory where you cloned this repo
 5. Replace the configuration file *elasticsearch.yml* in *elasticsearch-0.90.3/config/* with the file provided in this repo
