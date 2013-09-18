@@ -19,14 +19,12 @@ Prerequisites
 Installation
 --------------
 
-1. ``git clone git@github.com:Murhaf/elasticsearch-uio-demo.git``
-2. change directory to ``elasticsearch-uio-demo``
-2. ``git submodule init``
-3. ``git submodule update``
-4. Download [elasticsearch-0.90.3](https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-0.90.3.zip)
-5. Extract elasticsearch-0.90.3.zip in the same directory where you cloned this repo
-6. Replace the configuration file *elasticsearch.yml* in *elasticsearch-0.90.3/config/* with the file provided in this repo
-7. Install Elastic HQ plugin, as follows:
+1. ``git clone --recursive git@github.com:comperiosearch/elasticsearch-uio-demo.git``
+2. Change directory to ``elasticsearch-uio-demo``
+3. Download [elasticsearch-0.90.3](https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-0.90.3.zip)
+4. Extract elasticsearch-0.90.3.zip in the same directory where you cloned this repo
+5. Replace the configuration file *elasticsearch.yml* in *elasticsearch-0.90.3/config/* with the file provided in this repo
+6. Install Elastic HQ plugin, as follows:
 	``elasticsearch.0.90.3/bin/plugin -install royrusso/elasticsearch-HQ``
 
 Now you are ready to go!
