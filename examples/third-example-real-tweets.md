@@ -4,11 +4,11 @@ Prerequisites
 * Open elasticsearch-uio-demo/sense/index.html
 
 
-Queries
+Third example, real tweets with real queries
 --------------
 
 Phrase
-
+```json
     {
       "query": {
         "query_string": {
@@ -18,9 +18,9 @@ Phrase
         }
       }
     }
-
+```
 Boolean
-
+```json
     {
       "query": {
         "bool": {
@@ -41,13 +41,13 @@ Boolean
         }
       }
 }
-
+```
 
 Filters
 -----------
 
 Field
-
+```json
     {
       "query": {
         "constant_score": {
@@ -59,9 +59,9 @@ Field
         }
       }
     }
-
+```
 Boolean
-
+```json
     {
       "query": {
         "constant_score": {
@@ -84,13 +84,13 @@ Boolean
         }
       }
     }
+```
 
-
-Filters only do exact matching 
-Queries full text search
-Filters binary matches or not
-Queries relevance scoring
-Filters fast
-Queries heavier
-Filters cachable 
-Queries not cacheable
+* Filters only do exact matching 
+* Queries full text search
+* Filters binary matches or not
+* Queries relevance scoring
+* Filters fast
+* Queries heavier
+* Filters cachable 
+* Queries not cacheable
