@@ -9,7 +9,8 @@ files ([elasticsearch.yml](elasticsearch.yml), [dashboard.json](dashboard.json))
 
 [Kibana] is an open source (Apache Licensed), browser based  analytics
  and search interface data sets stored in
- elasticsearch. [source](https://github.com/elasticsearch/kibana)
+ elasticsearch. [[source]](https://github.com/elasticsearch/kibana)
+
 Said differently, Kibana helps you make sense of your data.
 
 [Sense] is a JSON-aware tool that allows you to communicate with
@@ -56,19 +57,19 @@ In you fave browser, open:
 
 Did you see something like:
 
-{
-  "ok" : true,
-  "status" : 200,
-  "name" : "Styx and Stone",
-  "version" : {
-    "number" : "0.90.3",
-    "build_hash" : "5c38d6076448b899d758f29443329571e2522410",
-    "build_timestamp" : "2013-08-06T13:18:31Z",
-    "build_snapshot" : false,
-    "lucene_version" : "4.4"
-  },
-  "tagline" : "You Know, for Search"
-}
+	{
+	  "ok" : true,
+	  "status" : 200,
+	  "name" : "Styx and Stone",
+	  "version" : {
+	    "number" : "0.90.3",
+	    "build_hash" : "5c38d6076448b899d758f29443329571e2522410",
+	    "build_timestamp" : "2013-08-06T13:18:31Z",
+	    "build_snapshot" : false,
+	    "lucene_version" : "4.4"
+	  },
+	  "tagline" : "You Know, for Search"
+	}
 
 It works!
 
