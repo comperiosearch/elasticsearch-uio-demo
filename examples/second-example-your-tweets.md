@@ -5,33 +5,33 @@ Prerequisites
 
 Query for "oslo"
 
-	{ 
-		"query": { 
-			"match": { 
-				"text": { 
-					"query":"oslo" 
-			} 
-		} 
-	}
+    { 
+      "query": { 
+        "match": { 
+          "text": { 
+            "query":"oslo" 
+        } 
+      } 
+    }
 
 Query for the hashtag "comperiouio"
 
-	{ 
-		"query": { 
-			"match": { 
-				"hashtag.text": { 
-					"query":"comperiouio" 
-			} 
-		} 
-	}
+    { 
+      "query": { 
+        "match": { 
+          "hashtag.text": { 
+            "query":"comperiouio" 
+        } 
+      } 
+    }
 
 Query for user "comperio_dev"
 
-	{ 
-		"query": { 
-			"match": { 
-				"user.screen_name": { 
-					"query":"comperio_dev" 
-			} 
-		} 
-	}
+    { 
+      "query": { 
+        "match": { 
+          "user.screen_name": { 
+            "query":"comperio_dev" 
+        } 
+      } 
+    }
