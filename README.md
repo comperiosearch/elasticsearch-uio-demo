@@ -9,8 +9,7 @@ files ([elasticsearch.yml](elasticsearch.yml), [dashboard.json](dashboard.json))
 
 [Kibana] is an open source (Apache Licensed), browser based  analytics
  and search interface data sets stored in
- elasticsearch. [[source]](https://github.com/elasticsearch/kibana)
-
+ elasticsearch [[source]](https://github.com/elasticsearch/kibana).
 Said differently, Kibana helps you make sense of your data.
 
 [Sense] is a JSON-aware tool that allows you to communicate with

@@ -7,6 +7,8 @@ Prerequisites
 Third example, real tweets with real queries
 --------------
 
+In this example we are going to use an index of tweets from all over the world. The index is named *twitter*.
+
 Phrase
 ```json
     {
@@ -95,3 +97,27 @@ Boolean
 * Queries heavier
 * Filters cachable 
 * Queries not cacheable
+
+Facets
+----------
+
+So who is spamming twitter with tweets on justin bieber.
+
+```json
+    {
+        "query": {
+        "match": {
+           "text": "justin bieber"
+        }
+        }, 
+      "facets": {
+         "countries": {
+            "terms": {
+               "field": "user.screen_name", 
+               "size": 20,
+               "order": "count"
+            }
+         }
+      }
+    }
+```

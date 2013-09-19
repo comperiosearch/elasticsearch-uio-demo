@@ -1,7 +1,7 @@
 Prerequisites
 --------------
-* Running node of elasticsearch (again, simply do: bin/elasticsearch)
-* curl
+* Running instance of elasticsearch (again, simply do: bin/elasticsearch)
+* cURL
 
 In this example, we will manually (1) create an index, (2) index some
 tweets and (3) write a couple of queries.

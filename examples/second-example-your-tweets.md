@@ -5,7 +5,7 @@ Prerequisites
 
 Second example, your tweets!
 ---------------
-In the following, we will use [Sense] to query our index uiocomperio.
+In the following, we will use [Sense] to query our index *uiocomperio*.
 
 Query for all tweets that contian the word "oslo"
 ```json
