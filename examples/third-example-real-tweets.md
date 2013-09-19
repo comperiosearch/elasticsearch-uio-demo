@@ -11,10 +11,11 @@ Phrase
 ```json
     {
       "query": {
-        "query_string": {
-          "default_field": "text",
-          "query": "New York",
-          "default_operator": "AND"
+        "match": {
+          "text" : {
+            "query": "New York",
+            "operator": "and"
+          }
         }
       }
     }
