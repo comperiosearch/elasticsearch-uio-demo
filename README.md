@@ -25,7 +25,7 @@ Prerequisites
 Installation
 --------------
 
-1. ``git clone --recursive git@github.com:comperiosearch/elasticsearch-uio-demo.git``
+1. ``git clone --recursive https://github.com/comperiosearch/elasticsearch-uio-demo.git``
 2. Change directory to ``elasticsearch-uio-demo``
 
 Now you can either run the script ``prepare.sh`` (Windows: ``prepare.bat``) or manually do the following:
