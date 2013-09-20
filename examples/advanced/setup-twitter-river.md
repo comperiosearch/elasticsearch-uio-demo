@@ -1,7 +1,7 @@
 Prerequisites
 --------------
 * Running node of elasticsearch (again, simply do: bin/elasticsearch)
-* The twitter river plugin: bin/plugin -install elasticsearch/elasticsearch-river-twitter/1.4.0
+* The twitter river plugin: ``bin/plugin -install elasticsearch/elasticsearch-river-twitter/1.4.0``
 
 The following is copied from [Twitter River Plugin for ElasticSearch](https://github.com/elasticsearch/elasticsearch-river-twitter):
 
@@ -54,7 +54,7 @@ In order to stop the river you need to delete it, as follows:
 	curl -XDELETE localhost:9200/_river/my_twitter_river/
 ```
 
-Don't worry this will only deletes the river not the index.
+Don't worry this will only delete the river not the index.
 
 
 
